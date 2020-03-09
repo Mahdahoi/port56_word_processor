@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Port 56 Word-Processor Demo</title>
+    <link rel="preload" href="libraries.js" as="script">
+    <link rel="preload" href="build.js" as="script">
+    <link rel="preload" href="init.js" as="script">
+    <style>
+      body, html {
+        margin: 0;
+        overflow: hidden;
+      }
+      * {
+        box-sizing: border-box;
+        scrollbar-width: auto;
+      }
+      body {
+        display: grid;
+        grid-template-columns: 1fr 800px 1fr;
+        grid-template-areas: ". editor .";
+
+        background-color: rgb(44, 44, 44);
+        background-image: url("noise.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      canvas {
+        grid-area: editor;
+        height: 100vh;
+        justify-self: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+  </body>
+</html>
+<script src="libraries.js" type="text/javascript"></script>
+<script src="build.js" type="text/javascript"></script>
+<script src="init.js" type="text/javascript"></script>
