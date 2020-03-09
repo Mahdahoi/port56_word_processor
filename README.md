@@ -24,6 +24,17 @@ and `libraries.js` in some way in your webpage and call
 The resulting instance can now be used for interacting with
 the editor.
 
+### Roadmap
+- Internal plaintext data representation
+- Pre-supplied text monotone style rendering
+- Monospace mode
+- Cleanly registered Keyboard event handle
+- Cursor movement interactions
+- Selection handling
+- Common shortcuts implementation
+- Copy / Paste
+- Research into docx
+
 # Contributing
 ### Where to edit / put files
 
