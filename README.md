@@ -1,11 +1,12 @@
 # Absctract
 ### What is the Port56 Word Processor (going to be)
 The Port56 Word Processor is supposed to become a fully
-featured MIT-Licensed WYSIWYG serverless implementation of a
-rich text editor using the internal .docx structure, being
-rendered inside a HTML5 canvas developed by the Port56 UG,
-the state being 100% controllable using the same internal
-API as the editor uses for itself.
+featured **MIT-Licensed** **WYSIWYG** **serverless**
+implementation of a **rich text editor** using internal
+**.docx structure** internally, being rendered inside a
+**HTML5 canvas** developed by the Port56 UG, the state being
+*100% controllable using the same internal API as the editor
+uses for itself*.
 
 ### Why
 Since all implementations of a WYSIWYG web editor I've seen
