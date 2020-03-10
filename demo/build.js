@@ -50,6 +50,10 @@ class Port56WordProcessor {
 
   setPageMargin(margin){
     const sanitized = JSON.parse(JSON.stringify(margin));
+    const tooShort = sanitized[0] + sanitized[2] > this.height;
+    const tooThin = sanitized[1] + sanitized[3] > this.width;
+    if(tooShort || tooThin){ throw "PageMargins overlap @ current page size!"; }
+
     this.pageMargin = sanitized;
     this.renderQueue.pageMargin = sanitized;
   }
