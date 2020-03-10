@@ -42,7 +42,10 @@ class Port56WordProcessor {
     const height = this.height - top - bottom;
 
     this.clearScreen();
-    this.ctx.strokeStyle = "black";
+    this.ctx.linceCap = "square";
+    this.ctx.lineWidth = 1;
+    this.ctx.lineJoin = "miter";
+    this.ctx.strokeStyle = "#707070";
     this.ctx.strokeRect(left, top, width, height);
 
     this.renderQueue.pageMargin = null;
